@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussein Alzoubi - 3D Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 3D Background -->
+    <div id="three-container"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Hussein<span>Alzoubi</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hussein Alzoubi</h1>
+            <p>Software Engineer & Developer</p>
+            <p>Passionate about creating innovative software solutions with expertise in Java, .NET C#, C++, Python, and
+                web technologies.</p>
+            <div>
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="img/profile.jpeg" alt="Hussein Alzoubi">
+                </div>
+                <div>
+                    <p>Software Engineer with hands-on experience in developing web and desktop applications using Java,
+                        .NET C#, C++, and Python. Skilled in database management with MySQL, PostgreSQL, and MongoDB,
+                        and proficient in web technologies including HTML, CSS, and JavaScript.</p>
+                    <p>Completed projects such as a medical appointment system and university database design.
+                        Passionate about artificial intelligence and eager to apply technical expertise in real-world
+                        software development projects.</p>
+                    <h3>Education</h3>
+                    <p><strong>Software Engineering</strong><br>
+                        Altinbas University • Istanbul, Turkey • 2021-2025 • GPA: 3.25</p>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C# & .NET</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL & NoSQL</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & ML</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3>Software Engineer, FitConnect – Fitness Coaching Mobile App</h3>
+                        <p><strong>Altinbas University – Graduation Project</strong></p>
+                        <ul>
+                            <li>Built a cross-platform mobile application using Flutter for personalized fitness
+                                coaching</li>
+                            <li>Developed backend services with Node.js, Express.js, and MongoDB Atlas</li>
+                            <li>Implemented user authentication and role-based access control</li>
+                            <li>Integrated real-time chat, push notifications, and video calls</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>Software Developer (.NET C#), Medical Appointment System</h3>
+                        <p><strong>Altinbas University – Academic Project</strong></p>
+                        <ul>
+                            <li>Developed a desktop application using .NET C# for patient appointment scheduling</li>
+                            <li>Designed user-friendly interfaces using Windows Forms</li>
+                            <li>Integrated SQL Server database for secure data storage</li>
+                            <li>Implemented role-based access control and search functions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>Software Engineer Intern</h3>
+                        <p><strong>EARTech Information Technology</strong></p>
+                        <ul>
+                            <li>Gained hands-on experience in AI and Machine Learning</li>
+                            <li>Developed secure infrastructure solutions using Microsoft Azure</li>
+                            <li>Worked on cybersecurity projects and automation scripts</li>
+                            <li>Collaborated with cross-functional teams on AI/ML models</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h3>Database Developer (MySQL), University Database Project</h3>
+                        <p><strong>Altinbas University – Academic Project</strong></p>
+                        <ul>
+                            <li>Designed and implemented relational databases using MySQL</li>
+                            <li>Developed Entity-Relationship (ER) diagrams</li>
+                            <li>Created and optimized complex SQL queries and stored procedures</li>
+                            <li>Applied normalization techniques and indexing for performance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80"
+                            alt="Medical Appointment System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Medical Appointment System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">.NET C#</span>
+                            <span class="project-tag">SQL Server</span>
+                            <span class="project-tag">Windows Forms</span>
+                        </div>
+                        <p>Developed a comprehensive medical appointment system using .NET C# to streamline patient
+                            scheduling and management.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1436&q=80"
+                            alt="University Database">
+                    </div>
+                    <div class="project-content">
+                        <h3>University Database System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Database Design</span>
+                            <span class="project-tag">ER Diagrams</span>
+                        </div>
+                        <p>Designed and managed university databases using MySQL, ensuring data integrity and efficient
+                            querying.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="FitConnect App">
+                    </div>
+                    <div class="project-content">
+                        <h3>FitConnect Fitness App</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <p>Cross-platform mobile application for personalized fitness coaching with real-time features
+                            and progress tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="cert-container">
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="cert-date">2024</div>
+                    </div>
+                    <h3>Getting Started with Git and GitHub</h3>
+                    <p><strong>IBM</strong></p>
+                    <p>Comprehensive understanding of version control with Git, including branch management, commits,
+                        and merging. Hands-on experience with GitHub for collaboration and repository management.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="cert-date">2024</div>
+                    </div>
+                    <h3>Introduction to Web Development</h3>
+                    <p><strong>IBM</strong></p>
+                    <p>Fundamental skills in front-end web development using HTML, CSS, and JavaScript to create
+                        responsive and interactive web pages.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="cert-date">2024</div>
+                    </div>
+                    <h3>Generative AI: Prompt Engineering Basics</h3>
+                    <p><strong>IBM</strong></p>
+                    <p>Foundational knowledge in prompt engineering for generative AI models. Techniques to craft
+                        effective prompts for diverse AI applications.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="cert-date">2024</div>
+                    </div>
+                    <h3>Introduction to Cloud Computing</h3>
+                    <p><strong>IBM</strong></p>
+                    <p>Foundational understanding of cloud computing concepts, including service models (IaaS, PaaS,
+                        SaaS) and deployment models.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="cert-date">2023</div>
+                    </div>
+                    <h3>Crash Course on Python</h3>
+                    <p><strong>Google</strong></p>
+                    <p>Solid understanding of Python programming fundamentals, including syntax, data structures, and
+                        control flow. Hands-on experience with Python libraries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hussein.20033@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+971567394918</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Istanbul, Turkey</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contact-form">
+                    <div id="form-status"
+                        style="display: none; margin-bottom: 1rem; padding: 1rem; border-radius: 5px;"></div>
+                    <form action="https://formspree.io/f/xnngplra" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hussein-alzoubi" class="social-link"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="#https://github.com/Hussein5673" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">© 2023 Hussein Alzoubi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
